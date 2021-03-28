@@ -9,7 +9,7 @@ namespace RecipeJournal.Models.Commands.Recipes
     public class CreateRecipeCommand
     {
         [Required]
-        public string Title { get; set; } = "Rice Pudding";
+        public string Title { get; set; };
         [Required]
         public List<string> Directions { get; set; } = new List<string>();
     }
